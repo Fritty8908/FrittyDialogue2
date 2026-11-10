@@ -1,0 +1,11 @@
+name: MeowDialogue
+version: 1.2.0
+main: DrRaiker.meowDialogue.MeowDialogue
+api-version: '1.21'
+authors: [ DrRaiker ]
+softdepend: [ PlaceholderAPI ]
+commands:
+  meow-dialogue:
+    permission: meow-dialogue.access
+    aliases:
+      - md
