@@ -1,4 +1,4 @@
-package DrRaiker.meowDialogue;
+Package Fritty.FrittyDialogue;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -52,11 +52,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * MeowDialogue 1.2.0
+ * FrittyDialogue 1.2.0
  * Діалог = один файл. Усі вузли (гілки) лежать у секції "dialogue".
  * Перший вузол - стартовий. next: <вузол> переходить до вузла, без next діалог закривається.
  */
-public final class MeowDialogue extends JavaPlugin implements Listener, TabExecutor {
+public final class FrittyDialogue extends JavaPlugin implements Listener, TabExecutor {
 
     // ------------------------------------------------------------------ модель
 
@@ -145,7 +145,7 @@ public final class MeowDialogue extends JavaPlugin implements Listener, TabExecu
         loadAll();
 
         getServer().getPluginManager().registerEvents(this, this);
-        PluginCommand pc = getCommand("meow-dialogue");
+        PluginCommand pc = getCommand("fritty-dialogue");
         if (pc != null) {
             pc.setExecutor(this);
             pc.setTabCompleter(this);
@@ -507,4 +507,4 @@ public final class MeowDialogue extends JavaPlugin implements Listener, TabExecu
             while (pos[0] < tokens.size()) {
                 String t = tokens.get(pos[0]++);
                 sb.append(t);
-             
+                                        
