@@ -1,0 +1,11 @@
+name: FrittyDialogue
+version: 1.2.0
+main: DrRaiker.frittyDialogue.FrittyDialogue
+api-version: '1.21'
+authors: [ Fritty ]
+softdepend: [ PlaceholderAPI ]
+commands:
+  fritty_dialogue:
+    permission: fritty_dialogue.access
+    aliases:
+      - fd
